@@ -8,11 +8,13 @@ Check and meet the [system requirements](http://dtag-dev-sec.github.io/mediator/
 
 So, clone the repository. Run as root. Enjoy.
 
-    groupadd groupX
+Make sure groupX and userX are same.
+
+    groupadd groupX
     useradd -g groupX -m userX
     passwd userX
     
-Make sure you have your SSH key added to your account (~/.ssh/authorized_keys) 
+Make sure you have your SSH key added to your account (~/.ssh/authorized_keys).
 
     su - tpot
     ssh-keygen
