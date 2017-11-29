@@ -16,7 +16,7 @@ Make sure groupX and userX are same.
     
 Make sure you have your SSH key added to your account (~/.ssh/authorized_keys).
 
-    su - tpot
+    su - userX
     ssh-keygen
     <enter passphase>
     cp .ssh/id_rsa.pub .ssh/authorized_keys
