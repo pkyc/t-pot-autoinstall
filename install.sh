@@ -253,9 +253,9 @@ apt-get autoremove -y
 
 # Let's remove NGINX default website
 fuECHO "### Removing NGINX default website."
-[ -e /etc/nginx/sites-enabled ] && rm /etc/nginx/sites-enabled/default  
-[ -e /etc/nginx/sites-avaliable ] && rm /etc/nginx/sites-available/default  
-[ -e /usr/share/nginx/html/index.html ] && rm /usr/share/nginx/html/index.html  
+[ -e /etc/nginx/sites-enabled ] && rm -f /etc/nginx/sites-enabled/default  
+[ -e /etc/nginx/sites-avaliable ] && rm -f /etc/nginx/sites-available/default  
+[ -e /usr/share/nginx/html/index.html ] && rm -f /usr/share/nginx/html/index.html  
 
 if [ -z ${noninteractive+x} ]; then
 	# Let's ask user for a password for the web user
