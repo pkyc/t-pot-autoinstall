@@ -28,7 +28,7 @@ Make sure you have your SSH key added to your account (~/.ssh/authorized_keys).
 
 If you run into problems during installation it might be related to your hoster's custom Ubuntu update repositories. So far, we do not have a solution for this. 
 
-Due to public demand, we added a non-interactive installation option. Just add the *username*, the *number referencing the edition* and the *password for web access* to the installation script, e.g.
+Due to public demand, we added a non-interactive installation option. Just add the *username*, the *number referencing the edition* and the *password for web access* to the installation script, e.g
 
 	./install.sh ubuntu 2 myPassw0rd
 		
