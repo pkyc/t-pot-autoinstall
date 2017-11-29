@@ -11,6 +11,15 @@ During setup, you can choose from four different configurations: T-Pot's standar
 
 So, clone the repository. Run as root. Enjoy.
 
+    groupadd tpot
+    useradd -g tpot -m tpot
+    passwd tpot
+    
+    su - tpot
+    ssh-keygen
+    <enter passphase>
+    cp .ssh/id_rsa.pub .ssh/authorized_keys
+        
     git clone https://github.com/dtag-dev-sec/t-pot-autoinstall.git
     cd t-pot-autoinstall/
     sudo su
