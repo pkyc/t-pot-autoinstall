@@ -9,8 +9,8 @@ Check and meet the [system requirements](http://dtag-dev-sec.github.io/mediator/
 So, clone the repository. Run as root. Enjoy.
 
 Make sure groupX and userX are same.
-
-    groupadd groupX
+    
+    groupadd groupX
     useradd -g groupX -m userX
     passwd userX
     
