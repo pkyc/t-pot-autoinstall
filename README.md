@@ -13,6 +13,7 @@ So, clone the repository. Run as root. Enjoy.
     passwd tpot
     
 Make sure you have your SSH key added to your account (~/.ssh/authorized_keys) 
+'''
     su - tpot
     ssh-keygen
     <enter passphase>
@@ -22,7 +23,7 @@ Make sure you have your SSH key added to your account (~/.ssh/authorized_keys)
     cd t-pot-autoinstall/
     sudo su
     ./install.sh
-    
+''''    
 If you run into problems during installation it might be related to your hoster's custom Ubuntu update repositories. So far, we do not have a solution for this. 
 
 Due to public demand, we added a non-interactive installation option. Just add the *username*, the *number referencing the edition* and the *password for web access* to the installation script, e.g.
