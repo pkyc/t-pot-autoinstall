@@ -1,13 +1,10 @@
-# Autoinstall T-Pot on Ubuntu 16.04.x 
+# Autoinstall T-Pot on Ubuntu 16.04.x (Customized)
 This script will install [T-Pot 17.10](http://dtag-dev-sec.github.io/mediator/feature/2017/11/07/t-pot-17.10.html) on a fresh Ubuntu 16.04.x LTS (64bit). 
 
-It is intended to be used on hosted servers, where an Ubuntu base image is given and there is no ability to install custom ISO images. 
 Successfully tested on vanilla Ubuntu 16.04.3 in VMware.
 
-Choose Ubuntu 16.04.x 64bit as operating system. Make sure you have your SSH key added to your account (~/.ssh/authorized_keys) 
-and meet the [system requirements](http://dtag-dev-sec.github.io/mediator/feature/2017/11/07/t-pot-17.10.html#requirements) (>=4GB RAM, 64GB disk, network exposure) for a full T-Pot instance. The system requirements depend on the flavour of T-Pot you intend to run. 
-
-During setup, you can choose from four different configurations: T-Pot's standard installation, industrial edition, full installation and, in case you have limited ressources, you can opt for a "honeypot only"-mode during install, which will install T-Pot without suricata and ELK dashboard (>=3GB RAM required). 
+Choose Ubuntu 16.04.x 64bit as operating system. 
+Check and meet the [system requirements](http://dtag-dev-sec.github.io/mediator/feature/2017/11/07/t-pot-17.10.html#requirements) 
 
 So, clone the repository. Run as root. Enjoy.
 
@@ -15,6 +12,7 @@ So, clone the repository. Run as root. Enjoy.
     useradd -g tpot -m tpot
     passwd tpot
     
+Make sure you have your SSH key added to your account (~/.ssh/authorized_keys) 
     su - tpot
     ssh-keygen
     <enter passphase>
